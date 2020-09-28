@@ -627,7 +627,7 @@ opacity: .75;
 /* places */
 
 .places{
-
+    margin-bottom: 130px;
 }
 .places__title{
     margin-right: 15px;
@@ -687,18 +687,33 @@ opacity: .75;
 .places__card{
     position: relative;
     overflow: hidden;
- 
+    box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
 }
 
 .places__card__size_lg{
     grid-column: span 3;
-
+    margin-bottom: 10px;
+}
+.places__card__size_sm{
+    grid-column: span 2;
 }
 .places__card-pic{
     width: 100%;
+    transition: .15s all;
+    
+}
+.places__card-link{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+}
+.places__card-pic_size_lg{
     height: 354px;
     object-fit: cover;
-    transition: .15s all;
-
 }
+
+
 /* places end */
