@@ -352,12 +352,14 @@ img:hover {
    } */
 
 .wrapper{
-max-width: 1060px;
-margin: 0 auto;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 .wrapper-full{
     max-width: 1262px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 .section-title{
     font-weight: 500;
@@ -518,7 +520,7 @@ opacity: .75;
     margin-bottom: 112px;
 }
 .benefits__card-title{
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 26px;
