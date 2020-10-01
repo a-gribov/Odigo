@@ -846,4 +846,8 @@ opacity: .75;
     line-height: 24px;
     color: white;
 }
+.footer__menu-item-link:hover,
+.footer__menu-item-link:focus{
+    opacity: .75;
+}
 /* footer end */
