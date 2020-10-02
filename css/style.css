@@ -372,43 +372,43 @@ img{
 }
 /* header */
 .header{
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-transition: .2s linear;
-padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s linear;
+    padding-bottom: 20px;
+    z-index: 999;
 
 }
 .header_active{
     background: #0E1D28;
-    z-index: 99;
 }
 .header__wrapper{
-display: flex;
-flex-wrap: wrap;
-align-items: flex-end;
-justify-content: space-between;
-padding-top: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 56px;
 }
 .header__list{
-display: flex;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 .header__item{
-margin-right: 82px;
+    margin-right: 82px;
 }
 .header__item:last-child{
-margin-right: 0;
+    margin-right: 0;
 }
 .header__link{
- font-size: 18px;
-line-height: 24px;
-text-decoration: none;
-color: #ffffff;
+    font-size: 18px;
+    line-height: 24px;
+    text-decoration: none;
+    color: #ffffff;
 }
 .header__link:hover,.header__link:focus,.header__link:active{
-opacity: .75;
+    opacity: .75;
 }
 
 .header__burger{
@@ -872,18 +872,45 @@ opacity: .75;
         height: 100%;
         top: 0;
         left: 0;
-        background-color: #333333;
+        background-color: black;
         z-index: 10;
         padding: 75px;
+        transform: translateX(100%);
     }
     .header__item{
         width: 100%;
         margin-right: 0;
-
+        margin-bottom: 30px;
+    }
+    .header__item:last-child{
+        margin-bottom: 0;
     }
     .header__link{
         font-size: 42px;
         line-height: 48px;
+    }
+    .header__nav-close{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+    .header__nav-close-line{
+        display: block;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+    }
+
+    .header__nav-close-line:first-child{
+        transform: translateY(-50%) rotate(45deg);
+    }
+    .header__nav-close-line:last-child{
+        transform: translateY(-50%) rotate(-45deg);
     }
 }
 
